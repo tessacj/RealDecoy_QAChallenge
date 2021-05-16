@@ -7,8 +7,11 @@ Project Description
 The chosen language for this project was Python with use of Selenium, Python's Unittest, and Allure for report generation. The project was done in a virtual environment (pipenv) and was tested on Chrome Browser with an M1 Macbook Air (Arm Architecture). 
 
 Pre-requisites for Set-up
+
 Python 3.9
+
 pip3
+
 pipenv
 
 
