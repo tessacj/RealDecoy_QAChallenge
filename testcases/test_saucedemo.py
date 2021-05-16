@@ -91,6 +91,7 @@ class TestSauceDemo(unittest.TestCase):
         home_screen.standard_user_login()
         sidebar = SideBar(self.driver)
         sidebar.menu_item_logout()
+        home_screen = HomeScreen(self.driver)
         home_screen.validate_page_loaded()
     
     def test_cart_page_without_items(self):

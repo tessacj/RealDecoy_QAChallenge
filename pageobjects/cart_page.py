@@ -3,6 +3,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
+import pytest
+import allure
 
 from values import strings
 
@@ -15,6 +17,7 @@ class Cart:
             By.XPATH, "//*[@id='shopping_cart_container']")))
 
     #Function to validate the cart page elements without adding an item to it
+    @allure.testcase("Load Cart Page Without adding items")
     def navigate_to_cart_without_items(self):
         self.cart_icon.click()
 
@@ -39,6 +42,7 @@ class Cart:
         self.cart_checkout_btn.is_displayed()
 
     #Function to validate the cart page elements when an item is added to it
+    @allure.testcase("Load Cart Page With items added")
     def navigate_to_cart_with_items(self):
         self.cart_add_item = WebDriverWait(self.driver.instance, 10).until(EC.visibility_of_element_located((
             By.XPATH, "//*[@id='add-to-cart-sauce-labs-backpack']")))
