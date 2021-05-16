@@ -29,5 +29,6 @@ Running the Project
 2. Run the project with the command `python3 -m pytest testcases/test_saucedemo.py --verbose --alluredir ./new_test_report` (--alluredir creates a directory to hold the test report.)
 3. After the project has run, you can view the report with the command `allure serve ./new_test_report`
 
+As there is a compiled test report already in this repository, you can use the command `allure serve ./saucedemo_test_report` to view the report. 
 
-Thank You!
+Please reach out if there are any questions. 
